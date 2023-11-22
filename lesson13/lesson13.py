@@ -85,7 +85,6 @@
 # print(angr('evil','live'))
 def mobile(phrase):
     letters = {'1':'.,?!:','2':'abc', '3':'def','4':'ghi', '5':'jkl', '6':'mno', '7':'pqrs','8':'tuv', '9':'wxyz','0':' '}
-    # phrase = (input("Введите фразу: ")).lower()
     for s in phrase.lower():    # перебор по символам введеной фразы
         for key in letters: # перебор элементов словаря
             if s in letters[key]:    # ищем вхождение символа в элементе
