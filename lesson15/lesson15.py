@@ -69,4 +69,9 @@ while True:
 with open('dz_15.json','w',encoding='utf-8') as f:
     json.dump(data,f)
 
-
+with open('dz_15',encoding='utf-8') as f:
+    dz_15 = json.load(f)
+price_product = 0
+for i in price:
+    price_product += i
+    print(price_product)
