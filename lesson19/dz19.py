@@ -1,6 +1,6 @@
 def debug(func):
     def wrap(*args,**kwargs):
-        print('Name func: ', func.__name__, 'call',*args,{**kwargs})
+        print('Имя функции: ', func.__name__, 'ее аргументы',*args,{**kwargs})
         res = func(*args,**kwargs)
         print('Вернул значение', func.__name__, res)
         return res
